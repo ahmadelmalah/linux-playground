@@ -28,6 +28,29 @@ python3 --version
 sudo apt-get update
 sudo apt install python3-pip -y
 pip3 --version
+# Install virtualenv
+pip3 install virtualenv
+# add virtualenv to PATH
+echo "export PATH=$PATH:~/.local/bin" >> ~/.zshrc
+source ~/.zshrc
+# check virtualenv version
+virtualenv --version
+# Create a virtual environment
+virtualenv venv
+# Activate the virtual environment
+source venv/bin/activate
+# Deactivate the virtual environment
+deactivate
+# install jupyterlab
+pip install jupyterlab
+# run jupyterlab
+jupyter-lab
+
+# Install Anaconda
+# https://docs.anaconda.com/free/anaconda/install/linux/
+# or simply
+# bash ~/Downloads/Anaconda3-2021.05-Linux-x86_64.sh
+
 
 # Install latest LTS version of Node.js and npm
 # https://deb.nodesource.com/
@@ -38,6 +61,16 @@ echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.co
 sudo apt-get update && sudo apt-get install nodejs -y
 node --version
 npm --version
+
+# Install PHP and MySQL
+# https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-20-04
+sudo apt install php libapache2-mod-php php-mysql -y
+php --version
+sudo apt install mysql-server -y
+mysql --version
+# Secure MySQL
+sudo mysql_secure_installation
+
 
 # Clean up
 sudo apt autoremove -y
