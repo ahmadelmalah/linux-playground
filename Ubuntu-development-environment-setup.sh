@@ -51,6 +51,8 @@ jupyter-lab
 # or simply
 # bash ~/Downloads/Anaconda3-2021.05-Linux-x86_64.sh
 
+# Install c++ compiler
+sudo apt install g++ -y
 
 # Install latest LTS version of Node.js and npm
 # https://deb.nodesource.com/
