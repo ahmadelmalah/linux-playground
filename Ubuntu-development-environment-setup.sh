@@ -64,6 +64,9 @@ sudo apt-get update && sudo apt-get install nodejs -y
 node --version
 npm --version
 
+# Install Databases (Docker should be considered more)
+# https://www.postgresql.org/download/linux/ubuntu/
+
 # Install PHP and MySQL
 # https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-20-04
 sudo apt install php libapache2-mod-php php-mysql -y
